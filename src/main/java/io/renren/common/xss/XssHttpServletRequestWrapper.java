@@ -24,7 +24,8 @@ import java.util.Map;
 
 /**
  * XSS过滤处理
- *
+ * 想要改变在httpServletRequest中的参数，可以通过httpServletRequest的装饰类HttpServletRequestWrapper来实现，
+ * 只需要在装饰类中按照需要重写其getParameter（getParameterValues）方法即可。
  * @author Mark sunlightcs@gmail.com
  */
 public class XssHttpServletRequestWrapper extends HttpServletRequestWrapper {

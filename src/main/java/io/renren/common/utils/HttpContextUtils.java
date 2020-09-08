@@ -15,9 +15,14 @@ import javax.servlet.http.HttpServletRequest;
 
 public class HttpContextUtils {
 
+	/**
+	 * HttpServletRequest对象代表客户端的请求,当客户端通过HTTP协议访问服务器时,HTTP请求头中的所有信息都封装在这个对象中
+	 * @return
+	 */
 	public static HttpServletRequest getHttpServletRequest() {
 		return ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
 	}
+
 
 	public static String getDomain(){
 		HttpServletRequest request = getHttpServletRequest();

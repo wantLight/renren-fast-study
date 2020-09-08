@@ -1,3 +1,9 @@
+本人基于人人网开源的后台renren-fast做详细的备注学习~
+每行代码都会有详细的注释说明~
+
+
+以下是官方说明：
+
 **项目说明** 
 - renren-fast是一个轻量级的，前后端分离的Java快速开发平台，能快速开发项目并交付【接私活利器】
 - 支持MySQL、Oracle、SQL Server、PostgreSQL等主流数据库
@@ -52,9 +58,6 @@ renren-fast
 - 开发文档：https://www.renren.io/guide
 - Git仓库：https://gitee.com/renrenio/renren-fast
 - [人人开源社区](https://www.renren.io/community)：https://www.renren.io/community
-- 官方QQ群：324780204、145799952
-- 技术讨论、二次开发等咨询、问题和建议，请移步到人人开源社区，我会在第一时间进行解答和回复！
-- 如需关注项目最新动态，请Watch、Star项目，同时也是对项目最好的支持
 - 微信扫码并关注【人人开源】，获得项目最新动态及更新提醒
 
 <br>

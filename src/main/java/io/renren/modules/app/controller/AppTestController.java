@@ -37,6 +37,11 @@ public class AppTestController {
         return R.ok().put("user", user);
     }
 
+    /**
+     * @RequestAttribute 获取我们存进去的 userId
+     * @param userId
+     * @return
+     */
     @Login
     @GetMapping("userId")
     @ApiOperation("获取用户ID")

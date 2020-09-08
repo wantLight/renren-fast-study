@@ -19,6 +19,7 @@ import org.springframework.web.servlet.NoHandlerFoundException;
 
 /**
  * 异常处理器
+ * 当然这里也可以修改Http状态码回传，但不太建议。
  *
  * @author Mark sunlightcs@gmail.com
  */

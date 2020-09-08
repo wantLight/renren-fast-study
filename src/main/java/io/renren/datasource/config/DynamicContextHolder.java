@@ -21,6 +21,7 @@ public class DynamicContextHolder {
     private static final ThreadLocal<Deque<String>> CONTEXT_HOLDER = new ThreadLocal() {
         @Override
         protected Object initialValue() {
+            // ArrayDeque双端队列
             return new ArrayDeque();
         }
     };

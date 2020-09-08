@@ -48,9 +48,9 @@ public class SysLogAspect {
 	@Around("logPointCut()")
 	public Object around(ProceedingJoinPoint point) throws Throwable {
 		long beginTime = System.currentTimeMillis();
-		//执行方法
+		//执行切面方法
 		Object result = point.proceed();
-		//执行时长(毫秒)
+		//执行结束统计时长(毫秒)
 		long time = System.currentTimeMillis() - beginTime;
 
 		//保存日志
@@ -70,12 +70,12 @@ public class SysLogAspect {
 			sysLog.setOperation(syslog.value());
 		}
 
-		//请求的方法名
+		//aop获取请求的方法名
 		String className = joinPoint.getTarget().getClass().getName();
 		String methodName = signature.getName();
 		sysLog.setMethod(className + "." + methodName + "()");
 
-		//请求的参数
+		//aop获取请求的参数
 		Object[] args = joinPoint.getArgs();
 		try{
 			String params = new Gson().toJson(args);
@@ -84,9 +84,9 @@ public class SysLogAspect {
 
 		}
 
-		//获取request
+		//通过RequestContextHolder获取request
 		HttpServletRequest request = HttpContextUtils.getHttpServletRequest();
-		//设置IP地址
+		//request设置IP地址
 		sysLog.setIp(IPUtils.getIpAddr(request));
 
 		//通过shiro获取用户名

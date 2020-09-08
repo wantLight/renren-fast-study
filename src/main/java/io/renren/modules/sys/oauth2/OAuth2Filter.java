@@ -26,7 +26,7 @@ import java.io.IOException;
 
 /**
  * oauth2过滤器
- *
+ * Oauth2验证 （开发授权标准，允许第三方获取用户私有资源），Shiro认证信息存在里面的。
  * @author Mark sunlightcs@gmail.com
  */
 public class OAuth2Filter extends AuthenticatingFilter {

@@ -13,7 +13,7 @@ import java.util.HashMap;
 
 /**
  * Map工具类
- *
+ * new MapUtils().put("menu_id", menuId)
  * @author Mark sunlightcs@gmail.com
  */
 public class MapUtils extends HashMap<String, Object> {

@@ -24,6 +24,10 @@ import javax.servlet.DispatcherType;
 @Configuration
 public class FilterConfig {
 
+    /**
+     * shiro filter
+     * @return
+     */
     @Bean
     public FilterRegistrationBean shiroFilterRegistration() {
         FilterRegistrationBean registration = new FilterRegistrationBean();
@@ -36,6 +40,10 @@ public class FilterConfig {
         return registration;
     }
 
+    /**
+     * xss filter
+     * @return
+     */
     @Bean
     public FilterRegistrationBean xssFilterRegistration() {
         FilterRegistrationBean registration = new FilterRegistrationBean();

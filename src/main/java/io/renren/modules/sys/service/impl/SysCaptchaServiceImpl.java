@@ -47,6 +47,7 @@ public class SysCaptchaServiceImpl extends ServiceImpl<SysCaptchaDao, SysCaptcha
         captchaEntity.setCode(code);
         //5分钟后过期
         captchaEntity.setExpireTime(DateUtils.addDateMinutes(new Date(), 5));
+        //这里存储到redis上比较靠谱
         this.save(captchaEntity);
 
         return producer.createImage(code);

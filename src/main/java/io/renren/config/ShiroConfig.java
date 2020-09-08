@@ -49,6 +49,7 @@ public class ShiroConfig {
         filters.put("oauth2", new OAuth2Filter());
         shiroFilter.setFilters(filters);
 
+        // anon:无需认证即可访问
         Map<String, String> filterMap = new LinkedHashMap<>();
         filterMap.put("/webjars/**", "anon");
         filterMap.put("/druid/**", "anon");

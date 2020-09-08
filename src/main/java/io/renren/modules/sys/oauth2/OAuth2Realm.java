@@ -53,6 +53,8 @@ public class OAuth2Realm extends AuthorizingRealm {
     }
 
     /**
+     * 除了特殊请求外，不加注解的请求都会经过这边。
+     * 查询token的有效性 - 使用redis更加合适哦
      * 认证(登录时调用)
      */
     @Override

@@ -19,7 +19,7 @@ import java.util.Date;
 
 /**
  * 日期处理
- *
+ * java8对日期做了非常好的封装，建议用LocalDateTime处理时间
  * @author Mark sunlightcs@gmail.com
  */
 public class DateUtils {
