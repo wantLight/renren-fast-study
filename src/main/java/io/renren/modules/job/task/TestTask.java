@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * 测试定时任务(演示Demo，可删除)
- *
+ * 所有的task全都注册为Bean对象，实现可控性
  * testTask为spring bean的名称
  *
  * @author Mark sunlightcs@gmail.com

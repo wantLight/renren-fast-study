@@ -4,7 +4,7 @@
     <logger name="org.springframework.web" level="INFO"/>
     <logger name="org.springboot.sample" level="TRACE" />
 
-    <!-- 开发、测试环境 -->
+    <!-- 开发、测试环境 - info级别日志 -->
     <springProfile name="dev,test">
         <logger name="org.springframework.web" level="INFO"/>
         <logger name="org.springboot.sample" level="INFO" />
