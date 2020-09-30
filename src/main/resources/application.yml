@@ -4,14 +4,14 @@ server:
     uri-encoding: UTF-8
     max-threads: 1000
     min-spare-threads: 30
-  port: 8080
+  port: 7071
   servlet:
     context-path: /renren-fast
 
 spring:
-  # 环境 dev|test|prod
+  # 环境 dev|test|prod mvn clean install -Dmaven.test.skip=true
   profiles:
-    active: dev
+    active: prod
   # jackson时间格式化
   jackson:
     time-zone: GMT+8
